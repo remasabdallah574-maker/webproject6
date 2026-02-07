@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "xpython",
+      "display_name": "Python 3.13 (XPython)",
+      "language": "python"
+    },
+    "language_info": {
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "version": "3.13.1"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "18f914b3-c262-45f6-af75-e3e4aaf88028",
+      "cell_type": "code",
+      "source": "def is_prime(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "d1bf313e-cd56-409c-9acb-a3f558c04851",
+      "cell_type": "code",
+      "source": "def calculator(a, b, operation):\n    if operation == \"add\":\n        return a + b\n    elif operation == \"subtract\":\n        return a - b\n    elif operation == \"multiply\":\n        return a * b\n    elif operation == \"divide\":\n        if b == 0:\n            return \"Error: division by zero\"\n        return a / b\n    else:\n        return \"Invalid operation\"",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 3
+    }
+  ]
+}
